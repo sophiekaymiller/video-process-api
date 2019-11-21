@@ -46,7 +46,9 @@ Create a GET endpoint to retrieve the data
 
 
   <hr/>
-  #### **Test Results**
+  
+  #### Test Results
+  
   POST to http://127.0.0.1:5000/videos:
 
     {
@@ -54,8 +56,10 @@ Create a GET endpoint to retrieve the data
       "source": "source of video",
       "title": "title goes here"
     }
-
-  #### Output:
+  
+  GET Request http://127.0.0.1:5000/
+  
+  **Output:**
 
     {
       "videos": [
