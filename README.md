@@ -61,22 +61,28 @@ Create a GET endpoint to retrieve the data
   **Output:**
 
     {
-      "videos": [
-          {
-              "filename": "./video-test/fall.mp4",
-              "meta": {
-                  "info": {
-                      "duration": 10.143467,
-                      "fps": 29.97002997002997
-                  }
-              },
-              "source": "source of video",
-              "title": "title goes here"
-          },
-          {
-              "filename": "videofile.mp4",
-              "source": "source of video",
-              "title": "title goes here"
-          }
-      ]
+        "videos": [
+            {
+                "filename": "./video-test/fall.mp4",
+                "meta": {
+                    "info": {
+                        "duration": 10.143467,
+                        "fps": 29.97002997002997
+                    }
+                },
+                "source": "source of video",
+                "title": "title goes here"
+            },
+            {
+                "filename": "./video-test/fall.mp4",
+                "meta": {
+                    "info": {
+                        "duration": 10.143467,
+                        "fps": 29.97002997002997
+                    }
+                },
+                "source": "init video source",
+                "title": "init title"
+            }
+        ]
     }
