@@ -12,10 +12,17 @@ app = Flask(__name__)
 
 # init videos dictionary
 videos = [
-    {'title':'title goes here',
-    'source':'source of video',
-    'filename':'videofile.mp4'
-    }
+        {
+            "filename": "./video-test/fall.mp4",
+            "meta": {
+                "info": {
+                    "duration": 10.143467,
+                    "fps": 29.97002997002997
+                }
+            },
+            "source": "init video source",
+            "title": "init title"
+        }
     ]
 
 v_info = [
@@ -29,7 +36,7 @@ v_info = [
 
 @app.route('/')
 def index():
-  return jsonify({'videos': videos[:]})
+  return jsonify({'videos': videos})
 
 
 # Define valid input message object
@@ -83,7 +90,7 @@ def post_video():
 
 
         response = Response("Video Inserted", 201, mimetype='application/json')
-        response.headers['Location'] = "/videos/" + )
+        response.headers['Location'] = "/videos/" + str(t_dur + t_fps)
         return response
     else:
         invalidInputErrorMsg = {
