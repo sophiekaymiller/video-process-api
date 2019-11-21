@@ -1,12 +1,5 @@
 from flask import Flask, jsonify, request, Response
 import ffmpeg
-import argparse
-
-
-# parser = argparse.ArgumentParser(description='Get video information')
-# parser.add_argument('title', help='Input title')
-# parser.add_argument('source', help='Input source')
-# parser.add_argument('filename', help='Input filename')
 
 app = Flask(__name__)
 
