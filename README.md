@@ -24,7 +24,6 @@ Create a GET endpoint to retrieve the data
 - Dependencies:
   - flask
   - ffmpeg
-  - argparse
 
 ## Setup
 1. clone or download .zip repository 
