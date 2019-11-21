@@ -1,5 +1,6 @@
 # Video Processing API 
-Sophie Miller
+**Sophie Miller**
+
 Nov 20, 2019
 
 ## Instructions
